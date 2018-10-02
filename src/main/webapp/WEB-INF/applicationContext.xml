@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<b:beans xmlns="http://www.springframework.org/schema/security"
+         xmlns:b="http://www.springframework.org/schema/beans"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+         xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+         xmlns:context="http://www.springframework.org/schema/context"
+         xsi:schemaLocation="http://www.springframework.org/schema/security
+	http://www.springframework.org/schema/security/spring-security.xsd
+	http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/rabbit http://www.springframework.org/schema/rabbit/spring-rabbit.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--<http realm="JavaStudy example" use-expressions="true">-->
+        <!--<intercept-url pattern="/" access="isFullyAuthenticated() or isAnonymous()"/>-->
+        <!--<intercept-url pattern="/login.jsp*" access="isFullyAuthenticated() or isAnonymous()"/>-->
+        <!--<intercept-url pattern="/admin" access="hasRole('ADMIN')"/>-->
+        <!--<intercept-url pattern="/exitUser*" access="isFullyAuthenticated() or isAnonymous()"/>-->
+        <!--<intercept-url pattern="/**" access="hasRole('USER')"/>-->
+
+        <!--<form-login login-page="/login.jsp"-->
+                    <!--authentication-failure-url="/login.jsp?login_error=1"/>-->
+        <!--<access-denied-handler error-page="/accessDenied.jsp"/>-->
+        <!--<http-basic/>-->
+        <!--<logout logout-success-url="/exitUser.jsp"/>-->
+        <!--<remember-me />-->
+        <!--<headers/>-->
+        <!--<csrf/>-->
+    <!--</http>-->
+
+
+
+    <!-- Handles HTTP GET requests for /resources/** by efficiently serving
+        up static resources in the ${webappRoot}/resources directory -->
+    <!--<mvc:resources mapping="/resources/**" location="/resources/" />-->
+
+
+
+
+
+    <!--<rabbit:connection-factory id="connectionFactory" username="user" password="password"  />-->
+
+    <!--<rabbit:admin connection-factory="connectionFactory"/>-->
+
+    <!--<rabbit:template id="amqpTemplate" connection-factory="connectionFactory" />-->
+
+    <!--<rabbit:queue name="myQueue"/>-->
+
+
+
+
+</b:beans>
